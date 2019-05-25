@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+    background-color: #faeacb;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #212121;
+}
+
+#form-outer {
+    background-color: #fcfcfc;
+    margin: auto;
+    max-width: 900px;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.row-tab {
+    margin: 1em;
+}
+
+.row-labels {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.right-tab {
+    display: inline-block;
+    width: 45%;
+    margin-left: 2%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.input-field {
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: .5em;
+}
+
+.dropdown {
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: .5em;
+}
+
+input[type="checkbox"] {
+    margin: .5em;
+}
+
+input[type="radio"] {
+    margin: .5em;
+}
+
+button {
+    background-color: #9cc0e7;
+    width: 80px;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 0px solid;
+    color: #fcfcfc;
+    margin: 1em;
+}
+
+button:hover {
+    background-color: #e7b99c;
+}
+
+@media screen and (max-width: 800px) {
+
+    .row-labels {
+        text-align: left;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .right-tab {
+        float: left;
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+}

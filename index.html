@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SEA Survey</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">South East Asia: A Survey</h1>
+
+<div id="form-outer">
+    <p id="description">Thank you for letting us know of your travel habits while travelling SEA!</p>
+    <form id="survey-form">
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="name-label">* Name : </label>
+            </div>
+            <div class="right-tab">
+                <input autofocus type="text" placeholder="Please enter name here" name="name" id="name" class="input-field" required>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="email-label">* Email : </label>
+            </div>
+            <div class="right-tab">
+                <input type="email" placeholder="Please enter email here" name="email" id="email" class="input-field" required>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="number-label">* Age : </label>
+            </div>
+            <div class="right-tab">
+                <input type="number" placeholder="Age" name="number" id="number" class="input-field" min="1" max="125" required>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="occupation-label">Current occupation : </label>
+            </div>
+            <div class="right-tab">
+                <select id="dropdown" class="dropdown" name="occupation">
+                    <option disabled selected value>Please choose occupation</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="not">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="countries-visited">Please select ALL South East Asian countries visited : </label>
+            </div>
+            <div class="right-tab">
+                <input type="checkbox" name="thailand" value="thailand"> Thailand<br>
+                <input type="checkbox" name="laos" value="laos"> Laos<br>
+                <input type="checkbox" name="cambodia" value="cambodia"> Cambodia<br>
+                <input type="checkbox" name="vietnam" value="vietnam"> Vietnam<br>
+                <input type="checkbox" name="myanmar" value="myanmar"> Myanmar<br>
+                <input type="checkbox" name="malaysia" value="malaysia"> Malaysia<br>
+                <input type="checkbox" name="indonesia" value="indonesia"> Indonesia<br>
+                <input type="checkbox" name="singapore" value="singapore"> Singapore<br>
+                <input type="checkbox" name="philippines" value="philippines"> Philippines<br>
+                <input type="checkbox" name="east-timor" value="east-timor"> East Timor<br>
+                <input type="checkbox" name="brunei" value="brunei"> Brunei<br>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="recommend">How many of these countries are you planning to visit : </label>
+            </div>
+            <div class="right-tab">
+                <input type="radio" name="countrynum" value="none"> None<br>
+                <input type="radio" name="countrynum" value="1-4"> 1 - 4<br>
+                <input type="radio" name="countrynum" value="5-8"> 5 - 8<br>
+                <input type="radio" name="countrynum" value="9+"> 9+<br>
+            </div>
+        </div>
+        <div class="row-tab">
+            <div class="row-labels">
+                <label id="memories">What are some of your favourite memories from travelling around South East Asia : </label>
+            </div>
+            <div class="right-tab">
+                <textarea name="memories" class="input-field" rows="4" cols="50" placeholder="Favourite memories..."></textarea>
+            </div>
+        </div>   
+        <button type="submit" id="submit">Submit</button> 
+    </form>
+</div>
+
+</body>
+
+</html>
